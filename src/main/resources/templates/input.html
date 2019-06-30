@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<form action="#" th:action="@{/feedbackApp/save}" th:object=${formFeedback} method="post">
+
+<table border="1">
+<tr>
+<th>Going Good:</th>
+<td><textarea id="goingGood" th:field="*{goingGood}" rows="20" cols="100"></textarea></td>
+</tr>
+
+<tr>
+<th>Needs Improvement:</th>>
+<td><textarea id="needsImprovement" th:field="*{needsImprovement}" rows="20" cols="100"></textarea></td>
+</tr>
+<tr>
+<td><input type="submit"/></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
