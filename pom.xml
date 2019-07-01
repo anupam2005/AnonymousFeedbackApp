@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.idea.utility</groupId>
 	<artifactId>AnonymousFeedbackApp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>AnonymousFeedbackApp</name>
 	<description>A project for collecting anonymous feedback from a group. </description>
 

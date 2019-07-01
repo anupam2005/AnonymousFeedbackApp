@@ -44,7 +44,7 @@ public class GUIController {
 		String result=ERROR;
 		
 		HttpHeaders headers = new HttpHeaders();
-	    headers.add("Accept", MediaType.APPLICATION_JSON_VALUE);
+	    headers.add("Accept", MediaType.ALL_VALUE);
 	    headers.setContentType(MediaType.APPLICATION_JSON);
 		
 		//System.out.println("======="+JsonTransform.java2json(formFeedback));
@@ -52,7 +52,7 @@ public class GUIController {
 		HttpEntity<Feedback> requestBody = new HttpEntity<>(formFeedback, headers);
 		
 		RestTemplate restTemplate = new RestTemplate();
-		ResponseEntity<Feedback> f = restTemplate.postForEntity(ADD_FEEDBACK_URL, requestBody, Feedback.class);
+		ResponseEntity<String> f = restTemplate.postForEntity(ADD_FEEDBACK_URL, requestBody, String.class);
 		
 	    if(f.getStatusCode() == HttpStatus.OK) {
 	    	

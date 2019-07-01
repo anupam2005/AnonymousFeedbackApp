@@ -24,18 +24,20 @@ public class MessageProducer {
 	Queue queue;
 	
 	
-	@PostMapping(path = "/feedback", consumes = "application/json", produces = "application/json")
+	@PostMapping(path = "/feedback", consumes = "application/json")
 	public @ResponseBody String sendMessage(@RequestBody String feedback) {
+		
+		String result="error";
 		
 		try {
 			jmsTemplate.convertAndSend(queue, feedback);
-			
+			result="success";
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
 		
-		return feedback;
+		return result;
 		
 		
 	}
