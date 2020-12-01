@@ -4,7 +4,7 @@ Have you ever faced a situation when you need
 to take a quick _anonymous survey_ in your team?
 
 What if you can get rid of distributing post-it notes and get a
-handy web-app which can gather the survey data for you.
+handy web application which can gather the survey data for you.
 
 This application precisely solve the same problem and its a hassle-free
 way to gather anonymous survey data from your group.
@@ -16,7 +16,7 @@ the survey URL to your colleagues.
 
 1) This application stores the data in ActiveMQ which is free.
 Just unzip and start ActiveMQ on your machine before starting this App.
-(https://activemq.apache.org/components/classic/download/)
+(Download link - https://activemq.apache.org/components/classic/download/)
 
 2) Run this application jar in your local machine.
 
